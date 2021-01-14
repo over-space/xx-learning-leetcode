@@ -1,13 +1,14 @@
 package com.learning;
 
-import org.junit.Before;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 /**
  * @author lifang
  * @since 2021/1/14
  */
+@Test()
 public class BaseTest {
 
     private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(BaseTest.class);
