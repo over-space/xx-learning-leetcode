@@ -1,4 +1,4 @@
-package com.learning;
+package com.learning.leetcode.base;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 @Test()
 public class BaseTest {
 
-    private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(BaseTest.class);
+    public static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(BaseTest.class);
 
 
     @BeforeTest
@@ -23,4 +23,5 @@ public class BaseTest {
     public void afterTest(){
         logger.info("************************************************************************************************");
     }
+
 }
