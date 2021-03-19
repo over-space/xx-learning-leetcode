@@ -23,7 +23,7 @@ import org.junit.Test;
  * @author lifang
  * @since 2021/3/18
  */
-public class Leetcode0206_1 extends BaseTest {
+public class Leetcode0206_LinkList_002 extends BaseTest {
 
     @Test
     public void run(){
