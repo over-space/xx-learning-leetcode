@@ -22,3 +22,7 @@ r
 Bsrc/test/java/com/learning/leetcode/Leetcode0206_LinkList_003.java,b\0\b02cf7b05cdf403ae513412dd14bc59d92788ff7
 r
 Bsrc/test/java/com/learning/leetcode/Leetcode0206_LinkList_002.java,e\2\e277cdc8fbb4e4419bfb442f6298820f17d34600
+r
+Bsrc/test/java/com/learning/leetcode/Leetcode0206_LinkList_001.java,8\a\8a74d7f959496c5440702a57605125b9cd838b28
+r
+Bsrc/test/java/com/learning/leetcode/Leetcode0082_LinkList_004.java,9\5\958a9c6283e36cb6ca18edb983e00659c1f35ce4
