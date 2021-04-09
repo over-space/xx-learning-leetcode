@@ -48,8 +48,6 @@ public class Leetcode0002 extends BaseTest {
             l2 = l2.next;
         }
 
-
-
         if (carry > 0) {
             tail.next = new ListNode(carry);
         }
