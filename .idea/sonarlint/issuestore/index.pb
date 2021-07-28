@@ -26,3 +26,5 @@ r
 Bsrc/test/java/com/learning/leetcode/Leetcode0206_LinkList_001.java,8\a\8a74d7f959496c5440702a57605125b9cd838b28
 r
 Bsrc/test/java/com/learning/leetcode/Leetcode0082_LinkList_004.java,9\5\958a9c6283e36cb6ca18edb983e00659c1f35ce4
+i
+9src/test/java/com/learning/leetcode/Leetcode0146_LRU.java,e\b\eb3a27f0715aa5bad95b50c0a0efd1c8cce0e7bf
