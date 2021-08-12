@@ -1,6 +1,6 @@
 package com.learning.leetcode;
 
-import com.learning.leetcode.base.BaseTest;
+import com.learning.BaseTest;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;

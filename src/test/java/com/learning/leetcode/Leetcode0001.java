@@ -1,7 +1,7 @@
 package com.learning.leetcode;
 
 
-import com.learning.leetcode.base.BaseTest;
+import com.learning.BaseTest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
