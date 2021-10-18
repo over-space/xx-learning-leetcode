@@ -45,4 +45,16 @@ public class BaseTest {
             }
         }
     }
+
+    protected final void wait(int milliseconds){
+        logger.info("waiting");
+        int total = 0;
+        while (true){
+            total += 10;
+            sleep(10);
+            if(total >= milliseconds){
+                break;
+            }
+        }
+    }
 }

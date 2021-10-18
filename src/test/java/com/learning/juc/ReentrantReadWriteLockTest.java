@@ -27,8 +27,8 @@ public class ReentrantReadWriteLockTest extends BaseTest {
 
 
     @Test
-    public void testLock(){
-        for(int i = 0; i < 3; i++) {
+    public void testLock() {
+        for (int i = 0; i < 3; i++) {
             executorService.execute(() -> {
                 while (true) {
                     write();
@@ -37,7 +37,7 @@ public class ReentrantReadWriteLockTest extends BaseTest {
             });
         }
 
-        for(int i = 0; i < 7; i++) {
+        for (int i = 0; i < 7; i++) {
             executorService.execute(() -> {
                 while (true) {
                     read();
@@ -46,24 +46,24 @@ public class ReentrantReadWriteLockTest extends BaseTest {
             });
         }
 
-        while (true){
+        while (true) {
             sleep(50);
         }
     }
 
 
-    private void write(){
+    private void write() {
         writeLock.lock();
         dataList.add(random.nextInt(10000));
-        if(dataList.size() > 1000){
+        if (dataList.size() > 1000) {
             dataList.remove(0);
         }
         writeLock.unlock();
     }
 
-    private Integer read(){
+    private Integer read() {
         readLock.lock();
-        int value =  dataList.get(dataList.size() - 1);
+        int value = dataList.get(dataList.size() - 1);
         logger.info("value:{}, size:{}", value, dataList.size());
         readLock.unlock();
         return value;
