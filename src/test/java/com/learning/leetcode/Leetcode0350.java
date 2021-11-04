@@ -4,9 +4,7 @@ import com.learning.BaseTest;
 
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * 350. 两个数组的交集 II
