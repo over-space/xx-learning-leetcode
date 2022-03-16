@@ -30,6 +30,62 @@ public class CompletableFutureTest extends BaseTest {
     }
 
     @Test
+    public void test03() {
+        CompletableFuture future01 = CompletableFuture.supplyAsync(() -> {
+            sleep(new Random().nextInt(100));
+            printLog("future01");
+            return 1;
+        }, executorService);
+
+        CompletableFuture future02 = CompletableFuture.supplyAsync(() -> {
+            sleep(new Random().nextInt(100));
+            printLog("future02");
+            return 2;
+        }, executorService);
+
+        CompletableFuture future03 = CompletableFuture.supplyAsync(() -> {
+            sleep(new Random().nextInt(100));
+            printLog("future03");
+            return 3;
+        }, executorService);
+
+        CompletableFuture future04 = CompletableFuture.supplyAsync(() -> {
+            sleep(new Random().nextInt(100));
+            printLog("future04");
+            return 4;
+        }, executorService);
+
+        CompletableFuture future05 = CompletableFuture.supplyAsync(() -> {
+            sleep(new Random().nextInt(100));
+            printLog("future05");
+            return 5;
+        }, executorService);
+
+        CompletableFuture future06 = CompletableFuture.supplyAsync(() -> {
+            sleep(1000);
+            printLog("future06");
+            return 6;
+        }, executorService);
+
+        System.out.println(future01.getNow(-1));
+        System.out.println(future02.getNow(-1));
+        System.out.println(future03.getNow(-1));
+        System.out.println(future04.getNow(-1));
+        System.out.println(future05.getNow(-1));
+        System.out.println(future06.getNow(-1));
+
+        CompletableFuture.allOf(future01, future02, future03, future04, future05, future06).join();
+
+        System.out.println(future01.getNow(0));
+        System.out.println(future02.getNow(0));
+        System.out.println(future03.getNow(0));
+        System.out.println(future04.getNow(0));
+        System.out.println(future05.getNow(0));
+        System.out.println(future06.getNow(0));
+
+    }
+
+    @Test
     public void test02() {
         CompletableFuture future01 = CompletableFuture.runAsync(() -> {
             printLog("future01");
